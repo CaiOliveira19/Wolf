@@ -1,0 +1,153 @@
+ #Home{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .wolf_img{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/119305-removebg.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .txt_Wolfs {
+    position: absolute;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    text-align: top;
+    z-index: 2;
+    overflow: hidden;
+  }
+  
+  .txt_Wolfs .title {
+    font-size: 150px;
+    color: #ff0000;
+    transform: rotate(270deg);
+    overflow: hidden;
+  }
+
+  .title h1{
+    width: 100%;
+  }
+  
+  .About {
+    position: absolute;
+    width: 30%;
+    height: 8vh;
+    min-width: 200px;
+    top: 55%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #ff000091;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: 99;
+    overflow: hidden;
+  }
+  
+  .About a  {
+    width: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+    margin-left: 30px;
+    transition: 300ms all ease-in-out;
+    overflow: hidden;
+  }
+
+
+  .About a:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 0px;
+  }
+  
+  .Social {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 100px;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+  }
+
+  .Social ul{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Social ul li {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms all ease-in-out;
+  }
+
+  .Social ul li ion-icon{
+    color: #ff0000;
+  }
+  
+  .Social ul li:hover {
+    transform: rotate(15deg);
+  }
+  
+  .Preload {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #414141;
+    top: 0%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .Preload h1 {
+    font-size: 100px;
+    letter-spacing: 20px;
+  }
+  
+  .Preload span {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  
+  @media screen and (max-width: 899px) {
+    .txt_Wolfs {
+      display: none;
+    }
+  }
